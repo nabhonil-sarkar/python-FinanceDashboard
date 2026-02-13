@@ -213,11 +213,3 @@ if __name__ == "__main__":
         # If not, relaunch the script via Streamlit CLI
         sys.argv = ["streamlit", "run", sys.argv[0]]
         sys.exit(stcli.main())
-
-    except Exception as e:
-        # If anything breaks, show the error in a window
-        messagebox.showerror("Error", f"Something went wrong:\n{str(e)}")
-
-if __name__ == "__main__":
-
-    analyze_portfolio()
